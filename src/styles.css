@@ -1,0 +1,112 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100vw;
+  height: 6vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header button {
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  background-color: inherit;
+  margin-left: 0.5em;
+  padding: 0.5em;
+}
+
+.header-logo {
+  margin-left: calc(9.375em - 1.8984375em);
+}
+
+.card-container {
+  background-blend-mode: luminosity;
+  background-image: url("../public/amassapaper.jpg");
+  height: calc(100vh - 6vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5em;
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+.card-img {
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: calc(94vh - 10vh);
+  width: 90vw;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 3em;
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px black;
+}
+
+.card-content-list {
+  margin-left: 1em;
+  list-style: none;
+}
+
+.price:before {
+        content: "\1F4B8";
+        font-size: 16px;
+
+}
+
+.price{
+    color: #b4e197;
+}
+
+.location:before {
+    content: "\1F4CD";
+    font-size: 16px;
+  }
+
+.location {
+    color: #fcd2d1;
+}
+
+.source{
+    text-decoration: none;
+    color: #c4ddff;
+}
+
+.card-action {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1.5em;
+  height: 6vh;
+}
+
+.card-action button {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
