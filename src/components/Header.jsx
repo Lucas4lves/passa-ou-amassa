@@ -1,8 +1,8 @@
-export default function Header(){
+export default function Header(props){
     
     return(
         <header class="header">
-        <button>&#9776;</button>
+        <button onClick={props.openMenu}>&#9776;</button>
         <span class="header-logo" ></span>
       </header>
     )
